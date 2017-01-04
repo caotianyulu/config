@@ -1,0 +1,21 @@
+
+[user]
+	name = Jason
+	email = 583907678@qq.com
+[diff]
+	tool = bc3
+[difftool]
+	prompt = true
+[difftool "bc3"]
+	cmd = "\"D:/programs/Beyond Compare 3/BComp.exe\" \"$LOCAL\" \"$REMOTE\""
+[merge]
+	tool = bc3
+[mergetool]
+	prompy = true
+[mergetool "bc3"]
+	cmd = "\"D:/programs/Beyond Compare 3/BComp.exe\" \"$LOCAL\" \"$REMOTE\" \"$BASE\" \"$MERGED\""
+[alias]
+	st = status
+	co = checkout
+	br = branch
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
